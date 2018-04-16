@@ -20,7 +20,7 @@
           <div class="row">
             <div class="col-lg-5 col-sm-7">
               <div class="top_left_cont zoomIn wow animated"> 
-                <h2>We are <strong>poloyeff</strong> <br>为创造而生</h2>
+                <h2>We are <strong>Polo</strong> <br>为创造而生</h2>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text  printer took a galley of type and scrambled it to make a type specimen.</p>
                 <a href="#service" class="read_more2">查看更多</a> </div>
             </div>

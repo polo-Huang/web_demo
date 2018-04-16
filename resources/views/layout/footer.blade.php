@@ -21,7 +21,7 @@
         <div class="col-lg-4 wow fadeInLeft">   
             <div class="contact_info">
             <div class="detail">
-                <h4>PoloYeff</h4>
+                <h4>Polo</h4>
                 <p>新河街 402号, 马安堂社区 龙岗区, 深圳市</p>
             </div>
             <div class="detail">
@@ -82,6 +82,6 @@
     </section>
   </div>
   <div class="container">
-    <div class="footer_bottom"><span>Copyright &copy; 2018.PoloYeff All rights reserved.More Templates</div>
+    <div class="footer_bottom"><span>Copyright &copy; 2018.Polo All rights reserved.More Templates</div>
   </div>
 </footer>
