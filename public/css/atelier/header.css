@@ -1,0 +1,29 @@
+.sidebar-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+#menu li a {
+  text-align: left;
+}
+#menu .fa {
+  font-size: 1em;
+  display: inline-block;
+  width: 2em;
+  text-align: center;
+}
+#menu .fa-angle-right {
+  width: 1em;
+}
+.inner-block {
+  position: absolute;
+  top: 0;
+  padding-bottom: 7em;
+}
+.copyrights {
+  position: fixed;
+  bottom: 0;
+  width: 87%;
+  z-index: 1;
+  background-color: #fff;
+}
