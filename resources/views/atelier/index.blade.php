@@ -40,7 +40,7 @@
 												</div>
 											</li>
 											<li><a href="#">
-											   <div class="user_img"><img src="img/atelier/p4.png" alt=""></div>
+											   <div class="user_img"><img src="images/p4.png" alt=""></div>
 											   <div class="notification_desc">
 												<p>Lorem ipsum dolor</p>
 												<p><span>1 hour ago</span></p>
@@ -48,7 +48,7 @@
 											   <div class="clearfix"></div>	
 											</a></li>
 											<li class="odd"><a href="#">
-												<div class="user_img"><img src="img/atelier/p2.png" alt=""></div>
+												<div class="user_img"><img src="images/p2.png" alt=""></div>
 											   <div class="notification_desc">
 												<p>Lorem ipsum dolor </p>
 												<p><span>1 hour ago</span></p>
@@ -56,7 +56,7 @@
 											  <div class="clearfix"></div>	
 											</a></li>
 											<li><a href="#">
-											   <div class="user_img"><img src="img/atelier/p3.png" alt=""></div>
+											   <div class="user_img"><img src="images/p3.png" alt=""></div>
 											   <div class="notification_desc">
 												<p>Lorem ipsum dolor</p>
 												<p><span>1 hour ago</span></p>
@@ -79,7 +79,7 @@
 												</div>
 											</li>
 											<li><a href="#">
-												<div class="user_img"><img src="img/atelier/p5.png" alt=""></div>
+												<div class="user_img"><img src="images/p5.png" alt=""></div>
 											   <div class="notification_desc">
 												<p>Lorem ipsum dolor</p>
 												<p><span>1 hour ago</span></p>
@@ -87,7 +87,7 @@
 											  <div class="clearfix"></div>	
 											 </a></li>
 											 <li class="odd"><a href="#">
-												<div class="user_img"><img src="img/atelier/p6.png" alt=""></div>
+												<div class="user_img"><img src="images/p6.png" alt=""></div>
 											   <div class="notification_desc">
 												<p>Lorem ipsum dolor</p>
 												<p><span>1 hour ago</span></p>
@@ -95,7 +95,7 @@
 											   <div class="clearfix"></div>	
 											 </a></li>
 											 <li><a href="#">
-												<div class="user_img"><img src="img/atelier/p7.png" alt=""></div>
+												<div class="user_img"><img src="images/p7.png" alt=""></div>
 											   <div class="notification_desc">
 												<p>Lorem ipsum dolor</p>
 												<p><span>1 hour ago</span></p>
@@ -169,7 +169,7 @@
 									<li class="dropdown profile_details_drop">
 										<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
 											<div class="profile_img">	
-												<span class="prfil-img"><img src="img/atelier/p1.png" alt=""> </span> 
+												<span class="prfil-img"><img src="images/p1.png" alt=""> </span> 
 												<div class="user-name">
 													<p>Malorum</p>
 													<span>Administrator</span>
@@ -485,7 +485,7 @@
     					<div class='bar_group__bar thin' label='Amount' show_values='true' tooltip='true' value='550'></div>
     					<div class='bar_group__bar thin' label='Farming' show_values='true' tooltip='true' value='456'></div>
     		    </div>
-    				<script src="js/atelier/bars.js"></script>
+    				<script src="js/bars.js"></script>
 
     	      <!--//Progress bars-->
     	      </div>

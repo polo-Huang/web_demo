@@ -304,7 +304,7 @@ span.logo-clr{
     display: inline-block;
 }
 .search-box input[type="submit"] {
-    background: url(/img/atelier/search.png)no-repeat;
+    background: url(../images/search.png)no-repeat;
     width: 20px;
     height: 20px;
     display: inline-block;
@@ -1068,7 +1068,7 @@ canvas#radar {
 }
 /*--maloum grid start here--*/
 .malorum-top {
-    background: url(/img/atelier/1.jpg)no-repeat;
+    background: url(../images/1.jpg)no-repeat;
     background-size: cover;
     min-height:190px;
 }
@@ -1078,7 +1078,7 @@ canvas#radar {
     background: #fff;
 }
 span.malorum-pro {
-    background: url(/img/atelier/b3.png)no-repeat;
+    background: url(../images/b3.png)no-repeat;
     width: 95px;
     height: 95px;
     display: inline-block;
@@ -1292,7 +1292,7 @@ h3#geoChartTitle {
 }
 /*--climate start here--*/
 .climate-grid1 {
-    background: url(/img/atelier/climate.jpg)no-repeat;
+    background: url(../images/climate.jpg)no-repeat;
     min-height:375px;
     background-size: cover;
     box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.15);
@@ -1354,7 +1354,7 @@ span.clime-icon {
     margin-bottom: 0.3em;
 }
 .climate-grid2 {
-    background: url(/img/atelier/shoppy.jpg)no-repeat bottom;
+    background: url(../images/shoppy.jpg)no-repeat bottom;
     min-height:310px;
     background-size: cover;
     position:relative;
@@ -1726,7 +1726,7 @@ p.grid1 {
     padding: 6.5em 0em;
 }
 .login-head {
-    background: url(/img/atelier/login.jpg)no-repeat;
+    background: url(../images/login.jpg)no-repeat;
     background-size: cover;
     min-height: 150px;
 }
@@ -1878,7 +1878,7 @@ p.grid1 {
 }
 .forgot-grid ul li input[type="checkbox"]:checked+label span:first-child:before {
     content: "";
-    background:url(/img/atelier/tick.png)no-repeat 1px -1px;
+    background:url(../images/tick.png)no-repeat 1px -1px;
     position: absolute;
     left: 1px;
     top: 2px;
@@ -1927,7 +1927,7 @@ p.grid1 {
     box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.15);
 }
 .signup-head {
-    background: url(/img/atelier/login.jpg)no-repeat;
+    background: url(../images/login.jpg)no-repeat;
     background-size: cover;
     min-height: 150px;
 }
@@ -2431,7 +2431,7 @@ ul.nav.tabs li a span {
 }
 /*--light-box--*/
 .project-eff:hover span.rollover1 {
-	background: url(/img/atelier/arrow.png) center no-repeat;
+	background: url(../images/arrow.png) center no-repeat;
 	width:300px;
 	height:215px;
 	cursor: pointer;
@@ -2627,7 +2627,7 @@ input#datepicker {
 .text-box-dark{
 }
 .text-box-light{
-	background: url(/img/atelier/calender.png) no-repeat 95% 50%;
+	background: url(../images/calender.png) no-repeat 95% 50%;
 	cursor:pointer;
 	position: relative;
 }
@@ -2642,16 +2642,16 @@ input#datepicker {
 	width: 32px;
 	height: 32px;
 	display: inline-block;
-	background: url(/img/atelier/icon.png) no-repeat -111px -26px;
+	background: url(../images/icon.png) no-repeat -111px -26px;
 }
 .payment{
 	width: 32px;
 	height: 32px;
 	display: inline-block;
-	background: url(/img/atelier/icon.png) no-repeat -154px -23px;
+	background: url(../images/icon.png) no-repeat -154px -23px;
 }
 .payment-date-section{
-	background: url(/img/atelier/calender.png) no-repeat #fff 50%;
+	background: url(../images/calender.png) no-repeat #fff 50%;
 }
 .payment-sendbtns{
 	float:right;
@@ -2713,7 +2713,7 @@ a.order:hover{
 }
 /*-----*/
 .get-started{
-	background:url(/img/atelier/get.jpg) no-repeat 0px 0px;
+	background:url(../images/get.jpg) no-repeat 0px 0px;
 	min-height:400px;
 	padding:8% 0 0 0;
 	color:#fff;
@@ -2751,13 +2751,13 @@ a.order:hover{
 	display: inline-block;
 	width: 32px;
 	height: 32px;
-	background:url(/img/atelier/icon.png) no-repeat -32px -28px;
+	background:url(../images/icon.png) no-repeat -32px -28px;
 }
 .paypal{
 	display: inline-block;
 	width: 32px;
 	height: 32px;
-	background: url(/img/atelier/icon.png) no-repeat -71px -26px;
+	background: url(../images/icon.png) no-repeat -71px -26px;
 }
 .payment-online-form-right{
 	float: right;
@@ -2811,7 +2811,7 @@ input[type=checkbox].css-checkbox3 + label.css-label3 {
 	background-position: 0 -38px;
 	vertical-align: middle;
 	cursor: pointer;
-	background-image: url(/img/atelier/filter-bg.png);
+	background-image: url(../images/filter-bg.png);
 }
 input[type=checkbox].css-checkbox3:checked + label.css-label3 {
 	background-position: 0px 0px;
@@ -2825,7 +2825,7 @@ input[type=checkbox].css-checkbox4 + label.css-label4 {
 	background-position: 0 0px;
 	vertical-align: middle;
 	cursor: pointer;
-	background-image: url(/img/atelier/filter-bg.png);
+	background-image: url(../images/filter-bg.png);
 }
 input[type=checkbox].css-checkbox4:checked + label.css-label4 {
 	background-position: 0px -38px;
@@ -2839,7 +2839,7 @@ input[type=checkbox].css-checkbox5 + label.css-label5 {
 	background-position: 0 -38px;
 	vertical-align: middle;
 	cursor: pointer;
-	background-image: url(/img/atelier/filter-bg.png);
+	background-image: url(../images/filter-bg.png);
 }
 input[type=checkbox].css-checkbox5:checked + label.css-label5 {
 	background-position: 0px 0px;
@@ -2853,7 +2853,7 @@ input[type=checkbox].css-checkbox6 + label.css-label6 {
 	background-position: 0 0px;
 	vertical-align: middle;
 	cursor: pointer;
-	background-image: url(/img/atelier/filter-bg.png);
+	background-image: url(../images/filter-bg.png);
 }
 input[type=checkbox].css-checkbox6:checked + label.css-label6 {
 	background-position: 0px -38px;
@@ -3612,7 +3612,7 @@ canvas#radar {
     padding: 2em 1em;
 }
 .climate-grid2 {
-    background: url(/img/atelier/shoppy.jpg)no-repeat center;
+    background: url(../images/shoppy.jpg)no-repeat center;
     min-height: 290px;
     background-size: cover;   
     margin: 2em 0em 0em 0em;
@@ -4202,7 +4202,7 @@ canvas#line {
     width: 85%;
 }
 .search-box input[type="submit"] {
-    background: url(/img/atelier/search.png)no-repeat 2px 2px;
+    background: url(../images/search.png)no-repeat 2px 2px;
     background-size: 15px;
 }
 }
