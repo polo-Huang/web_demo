@@ -8,6 +8,12 @@ body {
     text-align: center;
 }
 
+/*error*/
+.form-group small {
+    display: contents;
+    color: red;
+}
+
 input[type="password"].form-control {
     height: 50px;
     margin: 0;
