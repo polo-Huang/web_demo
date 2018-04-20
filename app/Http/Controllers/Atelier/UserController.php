@@ -8,9 +8,17 @@ use App\User;
 
 class UserController extends Controller
 {
-    public function index(Request $request)
+    public function index()
     {
         $users = User::get();
-        return view('atelier/user/index');
+        return view('atelier/user/index', ['users' => $users]);
+    }
+    public function details($user_id)
+    {
+        $user = User::find($user_id);
+        if ($user == null) {
+            return redirect()->back();
+        }
+        return view('atelier/user/details', ['user' => $user]);
     }
 }

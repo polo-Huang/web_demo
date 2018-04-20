@@ -15,10 +15,24 @@
 #menu .fa-angle-right {
   width: 1em;
 }
+
+
+
 .inner-block {
   z-index: -1;
   padding-bottom: 7em;
 }
+.table_operate a {
+  color: inherit;
+}
+.table_operate a:hover {
+  color: #FC8213;
+}
+
+
+
+
+
 .copyrights {
   position: fixed;
   bottom: 0;

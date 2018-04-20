@@ -21,4 +21,5 @@ Route::get('/logout', 'Auth\LoginController@logout');
 Route::group(['middleware' => ['auth']], function(){
     Route::get('atelier/index', 'Atelier\HomeController@index');
     Route::get('atelier/users', 'Atelier\UserController@index');
+    Route::get('atelier/user/details/{user_id}', 'Atelier\UserController@details');
 });

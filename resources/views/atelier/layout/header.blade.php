@@ -10,26 +10,26 @@
 
   <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+  <link href="{{ asset('atelier/css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all">
   <!-- Custom Theme files -->
-  <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
-  <link href="css/header.css" rel="stylesheet" type="text/css"> 
+  <link href="{{ asset('atelier/css/style.css') }}" rel="stylesheet" type="text/css" media="all"/>
+  <link href="{{ asset('atelier/css/header.css') }}" rel="stylesheet" type="text/css"> 
   <!--js-->
-  <script src="js/jquery-2.1.1.min.js"></script> 
+  <script src="{{ asset('atelier/js/jquery-2.1.1.min.js') }}"></script> 
   <!--icons-css-->
-  <link href="css/font-awesome.css" rel="stylesheet"> 
+  <link href="{{ asset('atelier/css/font-awesome.css') }}" rel="stylesheet"> 
   <!--Google Fonts-->
   <!-- <link href='https://fonts.googleapis.com/css?family=Carrois+Gothic' rel='stylesheet' type='text/css'> -->
   <!-- <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,500,600' rel='stylesheet' type='text/css'> -->
   <!--static chart-->
-  <script src="js/Chart.min.js"></script>
+  <script src="{{ asset('atelier/js/Chart.min.js') }}"></script>
   <!--//charts-->
   <!-- geo chart -->
   <script src="http://cdn.jsdelivr.net/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
   <!-- <script>window.modernizr || document.write('<script src="lib/modernizr/modernizr-custom.js"><\/script>')</script> -->
-  <!--<script src="lib/html5shiv/html5shiv.js"></script>-->
+  <!--<script src="lib/html5shiv/html5shiv.js') }}"></script>-->
   <!-- Chartinator  -->
-  <script src="js/chartinator.js" ></script>
+  <script src="{{ asset('atelier/js/chartinator.js') }}"></script>
   <script type="text/javascript">
         // jQuery(function ($) {
 
@@ -97,7 +97,7 @@
       <!--geo chart-->
 
       <!--skycons-icons-->
-      <script src="js/skycons.js"></script>
+      <script src="{{ asset('atelier/js/skycons.js') }}"></script>
       <!--//skycons-icons-->
 
       @yield('link')
@@ -272,7 +272,7 @@
                     <li class="dropdown profile_details_drop">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                         <div class="profile_img">
-                          <span class="prfil-img"><img src="{{ Auth::user()->picture == null ? 'images/p8.png' : Auth::user()->picture }}" alt=""> </span> 
+                          <span class="prfil-img"><img src="{{ Auth::user()->picture == null ? '/atelier/images/p8.png' : Auth::user()->picture }}" alt=""> </span> 
                           <div class="user-name">
                             <p>{{ Auth::user()->name }}</p>
                             <span>{{ Auth::user()->role == null ? 'Administrator' : Auth::user()->role }}</span>
@@ -325,11 +325,11 @@
             <ul id="menu" >
               <li id="menu-home"><a href="{{ url('atelier/index') }}"><i class="fa fa-tachometer"></i><span>主页</span></a></li>
               <li id="menu-home"><a href="{{ url('atelier/users') }}"><i class="fa fa-user"></i><span>成员</span></a></li>
-              <li id="menu-home"><a href="index.html"><i class="fa fa-cubes"></i><span>项目</span></a></li>
+              <li id="menu-home"><a href="#"><i class="fa fa-cubes"></i><span>项目</span></a></li>
               <li><a href="#"><i class="fa fa-cogs"></i><span>站点设置</span><span class="fa fa-angle-right" style="float: right"></span></a>
                 <ul>
-                  <li><a href="grids.html">Grids</a></li>
-                  <li><a href="portlet.html">Portlets</a></li>                
+                  <li><a href="#">配置</a></li>
+                  <li><a href="{{ url('/') }}">查看前端</a></li>
                 </ul>
               </li>
               @if(0)
@@ -394,10 +394,10 @@
     });
   </script>
   <!--scrolling js-->
-  <script src="js/jquery.nicescroll.js"></script>
-  <script src="js/scripts.js"></script>
+  <script src="{{ asset('atelier/js/jquery.nicescroll.js') }}"></script>
+  <script src="{{ asset('atelier/js/scripts.js') }}"></script>
   <!--//scrolling js-->
-  <script src="js/bootstrap.js"> </script>
+  <script src="{{ asset('atelier/js/bootstrap.js"> </script>
   <!-- mother grid end here-->
 </body>
 </html>                     
