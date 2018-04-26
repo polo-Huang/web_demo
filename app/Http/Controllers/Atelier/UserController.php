@@ -84,12 +84,12 @@ class UserController extends Controller
     private function storeImage($file)
     {
         $allowed_extensions = ["png", "jpg", "gif", "jpeg"];
-        $destinationPath = 'uploads/user/picture/';//图片存放目录
+        $destinationPath = 'uploads/user/pictures/';//图片存放目录
         $file_path = public_path($destinationPath);
         //判断是否存在该路径，否则创建该路径
-        if (!file_exists($file_path)) {
-            mkdir($file_path, 777, true);
-        }
+        // if (!file_exists($file_path)) {
+        //     mkdir($file_path, 777, true);
+        // }
         $fileTime = time().rand(100,999);
         $fileFormat = '.'.strtolower($file->getClientOriginalExtension());//文件格式名
         
