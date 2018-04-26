@@ -88,7 +88,7 @@ class UserController extends Controller
         $file_path = public_path($destinationPath);
         //判断是否存在该路径，否则创建该路径
         if (!file_exists($file_path)) {
-            mkdir($file_path, 0777, true);
+            mkdir($file_path, 777, true);
         }
         $fileTime = time().rand(100,999);
         $fileFormat = '.'.strtolower($file->getClientOriginalExtension());//文件格式名
