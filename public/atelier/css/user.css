@@ -1,0 +1,18 @@
+.btn_edit {
+    cursor: pointer;
+    background: initial;
+    border-radius: 0px;
+    color: #555;
+    font-size: 0.9em;
+    text-align: center;
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    float: right;
+}
+li.active a i, .act a i {
+    color: #555;
+}
+.compose-bottom i.fa {
+    margin-right: 12px;
+}

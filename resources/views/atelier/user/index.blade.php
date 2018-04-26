@@ -100,16 +100,15 @@
                             <i class="fa fa-star icon-state-warning"></i>
                         </td>
                         <td class="hidden-xs">
-                            {{ $value->name }}
+                            <a href="{{ url('atelier/user/details/'.$value->id) }}">{{ $value->name }}</a>
                         </td>
                         <td>
-                            {{ $value->role == null ? '普通成员' : $value->role == null }}
+                            <a href="{{ url('atelier/user/details/'.$value->id) }}">{{ $value->role == null ? '普通成员' : $value->role }}</a>
                         </td>
                         <td>
                         </td>
                         <td class="table_operate">
-                            <a href="{{ url('atelier/user/details/'.$value->id) }}"><i class="fa fa-eye"></i></a>&nbsp;&nbsp;
-                            <a href=""><i class="fa fa-edit"></i></a>
+                            <a href="{{ url('atelier/user/details/'.$value->id) }}"><i class="fa fa-eye"></i></a>
                         </td>
                     </tr>
                     @endforeach

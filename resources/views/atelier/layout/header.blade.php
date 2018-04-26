@@ -15,7 +15,8 @@
   <link href="{{ asset('atelier/css/style.css') }}" rel="stylesheet" type="text/css" media="all"/>
   <link href="{{ asset('atelier/css/header.css') }}" rel="stylesheet" type="text/css"> 
   <!--js-->
-  <script src="{{ asset('atelier/js/jquery-2.1.1.min.js') }}"></script> 
+  <script src="{{ asset('atelier/js/jquery-2.1.1.min.js') }}"></script>
+  <script src="{{ asset('js/jquery.form.js') }}"></script>
   <!--icons-css-->
   <link href="{{ asset('atelier/css/font-awesome.css') }}" rel="stylesheet"> 
   <!--Google Fonts-->
@@ -100,6 +101,7 @@
       <script src="{{ asset('atelier/js/skycons.js') }}"></script>
       <!--//skycons-icons-->
 
+      <script src="{{ asset('atelier/js/header.js') }}"></script>
       @yield('link')
     </head>
 
@@ -138,7 +140,7 @@
                         </li>
                         <li>
                           <a href="#">
-                            <div class="user_img"><img src="images/p4.png" alt=""></div>
+                            <div class="user_img"><img src="{{ '/atelier/images/p4.png' }}" alt=""></div>
                             <div class="notification_desc">
                               <p>Lorem ipsum dolor</p>
                               <p><span>1 hour ago</span></p>
@@ -148,7 +150,7 @@
                         </li>
                         <li class="odd">
                           <a href="#">
-                            <div class="user_img"><img src="images/p2.png" alt=""></div>
+                            <div class="user_img"><img src="{{ '/atelier/images/p2.png' }}" alt=""></div>
                             <div class="notification_desc">
                               <p>Lorem ipsum dolor </p>
                               <p><span>1 hour ago</span></p>
@@ -158,7 +160,7 @@
                         </li>
                         <li>
                           <a href="#">
-                            <div class="user_img"><img src="images/p3.png" alt=""></div>
+                            <div class="user_img"><img src="{{ '/atelier/images/p3.png' }}" alt=""></div>
                             <div class="notification_desc">
                               <p>Lorem ipsum dolor</p>
                               <p><span>1 hour ago</span></p>
@@ -182,7 +184,7 @@
                           </div>
                         </li>
                         <li><a href="#">
-                          <div class="user_img"><img src="images/p5.png" alt=""></div>
+                          <div class="user_img"><img src="{{ '/atelier/images/p5.png' }}" alt=""></div>
                           <div class="notification_desc">
                             <p>Lorem ipsum dolor</p>
                             <p><span>1 hour ago</span></p>
@@ -190,7 +192,7 @@
                           <div class="clearfix"></div>  
                         </a></li>
                         <li class="odd"><a href="#">
-                          <div class="user_img"><img src="images/p6.png" alt=""></div>
+                          <div class="user_img"><img src="{{ '/atelier/images/p6.png' }}" alt=""></div>
                           <div class="notification_desc">
                             <p>Lorem ipsum dolor</p>
                             <p><span>1 hour ago</span></p>
@@ -198,7 +200,7 @@
                           <div class="clearfix"></div>  
                         </a></li>
                         <li><a href="#">
-                          <div class="user_img"><img src="images/p7.png" alt=""></div>
+                          <div class="user_img"><img src="{{ '/atelier/images/p7.png' }}" alt=""></div>
                           <div class="notification_desc">
                             <p>Lorem ipsum dolor</p>
                             <p><span>1 hour ago</span></p>
@@ -272,7 +274,7 @@
                     <li class="dropdown profile_details_drop">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                         <div class="profile_img">
-                          <span class="prfil-img"><img src="{{ Auth::user()->picture == null ? '/atelier/images/p8.png' : Auth::user()->picture }}" alt=""> </span> 
+                          <span class="prfil-img"><img class="img_picture" width="50" height="50" src="{{ Auth::user()->picture == null ? '/atelier/images/p8.png' : Auth::user()->picture }}" alt=""> </span> 
                           <div class="user-name">
                             <p>{{ Auth::user()->name }}</p>
                             <span>{{ Auth::user()->role == null ? 'Administrator' : Auth::user()->role }}</span>
@@ -283,9 +285,9 @@
                         </div>
                       </a>
                       <ul class="dropdown-menu drp-mnu">
-                        <li> <a href="#"><i class="fa fa-cog"></i> Settings</a> </li> 
-                        <li> <a href="#"><i class="fa fa-user"></i> Profile</a> </li> 
-                        <li> <a href="{{ url('logout') }}"><i class="fa fa-sign-out"></i> Logout</a> </li>
+                        <li> <a href="#"><i class="fa fa-cog"></i> 设置</a> </li> 
+                        <li> <a href="{{ url('atelier/user/details/'.Auth::id()) }}"><i class="fa fa-user"></i> 我的信息</a> </li> 
+                        <li> <a href="{{ url('logout') }}"><i class="fa fa-sign-out"></i> 注销</a> </li>
                       </ul>
                     </li>
                   </ul>
@@ -302,14 +304,16 @@
           <script>
               $(document).ready(function() {
                   var navoffeset=$(".header-main").offset().top;
-                  $(window).scroll(function(){
-                      var scrollpos=$(window).scrollTop(); 
-                      if(scrollpos >=navoffeset){
-                          $(".header-main").addClass("fixed");
-                      }else{
-                          $(".header-main").removeClass("fixed");
-                      }
-                  });
+                  // var scroll_function = function(){
+                    var scrollpos=$(window).scrollTop(); 
+                    if(scrollpos >=navoffeset){
+                        $(".header-main").addClass("fixed");
+                    }else{
+                        $(".header-main").removeClass("fixed");
+                    }
+                  // };
+                  // scroll_function;
+                  // $(window).scroll(scroll_function);
 
               });
           </script>
@@ -377,7 +381,7 @@
   <script>
     var toggle = true;
 
-    $(".sidebar-icon").click(function() {                
+    $(".sidebar-icon").click(function() {
       if (toggle)
       {
         $(".page-container").addClass("sidebar-collapsed").removeClass("sidebar-collapsed-back");
@@ -397,7 +401,7 @@
   <script src="{{ asset('atelier/js/jquery.nicescroll.js') }}"></script>
   <script src="{{ asset('atelier/js/scripts.js') }}"></script>
   <!--//scrolling js-->
-  <script src="{{ asset('atelier/js/bootstrap.js"> </script>
+  <script src="{{ asset('atelier/js/bootstrap.js') }}"> </script>
   <!-- mother grid end here-->
 </body>
 </html>                     
